@@ -1,10 +1,27 @@
 https://www.smashingmagazine.com/2021/04/building-video-streaming-app-nuxtjs-node-express/
 https://www.youtube.com/playlist?list=PL7XcC35Z6WFB3L2xLVV3S4bG_Z37MqcRe
-https://www.youtube.com/c/HusseinNasser-software-engineering/playlists
 https://habr.com/ru/company/ruvds/blog/457860/
 https://www.interviewbit.com/node-js-interview-questions/#reactor-pattern-in-node-js
 https://youtu.be/aTEDCotcn20
 https://blog.insiderattack.net/a-visual-guide-to-nodejs-streams-9d2d594a9bf5
-https://dev.to/bnb/explicit-esm-in-node-js-with-mjs-3ooh
+
+https://redislabs.com/blog/json-web-tokens-jwt-are-dangerous-for-user-sessions/
+
+https://medium.com/jit-team/implementing-a-sane-backend-in-node-js-using-nestjs-part-i-architecture-338e1e7e8f1a
+https://medium.com/jit-team/implementing-a-sane-backend-in-node-js-using-nestjs-part-ii-project-setup-and-structure-2f4f37aa9436
+
+https://www.educative.io/blog/mongodb-versus-postgresql-databases !
+
+https://youtu.be/Dm0CmZz-QyI !
+
+backup + docker ?
 
 HTTP/3 & QUIC
+
+https://youtu.be/j8Yxff6L_po
+https://youtu.be/2PPSXonhIck
+
+
+https://www.youtube.com/playlist?list=PLQnljOFTspQUNnO4p00ua_C5mKTfldiYT
+https://www.youtube.com/playlist?list=PLQnljOFTspQWGuRmwojJ6LiV0ejm6eOcs
+https://www.youtube.com/playlist?list=PLQnljOFTspQUybacGRk1b_p13dgI-SmcZ
