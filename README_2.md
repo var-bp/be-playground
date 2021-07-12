@@ -7,12 +7,8 @@ https://blog.insiderattack.net/a-visual-guide-to-nodejs-streams-9d2d594a9bf5
 
 https://redislabs.com/blog/json-web-tokens-jwt-are-dangerous-for-user-sessions/
 
-https://medium.com/jit-team/implementing-a-sane-backend-in-node-js-using-nestjs-part-i-architecture-338e1e7e8f1a
-https://medium.com/jit-team/implementing-a-sane-backend-in-node-js-using-nestjs-part-ii-project-setup-and-structure-2f4f37aa9436
-
 https://www.educative.io/blog/mongodb-versus-postgresql-databases !
-
-https://youtu.be/Dm0CmZz-QyI !
+https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4 !
 
 backup + docker ?
 
@@ -21,7 +17,15 @@ HTTP/3 & QUIC
 https://youtu.be/j8Yxff6L_po
 https://youtu.be/2PPSXonhIck
 
-
 https://www.youtube.com/playlist?list=PLQnljOFTspQUNnO4p00ua_C5mKTfldiYT
 https://www.youtube.com/playlist?list=PLQnljOFTspQWGuRmwojJ6LiV0ejm6eOcs
 https://www.youtube.com/playlist?list=PLQnljOFTspQUybacGRk1b_p13dgI-SmcZ
+
+
+For project:
+https://youtu.be/_oqSGs3rrf8
+https://stackoverflow.com/a/61916409
+https://youtu.be/Dm0CmZz-QyI
+https://medium.com/jit-team/implementing-a-sane-backend-in-node-js-using-nestjs-part-i-architecture-338e1e7e8f1a
+https://medium.com/jit-team/implementing-a-sane-backend-in-node-js-using-nestjs-part-ii-project-setup-and-structure-2f4f37aa9436
+https://youtu.be/jYFyLLqvHy8
