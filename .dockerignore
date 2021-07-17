@@ -4,13 +4,12 @@
 *Dockerfile*
 *docker-compose*
 
-node_modules
 coverage
 client
 dist
 volumes_data
 
-.env
+.env*
 .vscode
 .editorconfig
 .DS_Store

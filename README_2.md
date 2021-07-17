@@ -10,6 +10,9 @@ https://redislabs.com/blog/json-web-tokens-jwt-are-dangerous-for-user-sessions/
 https://www.educative.io/blog/mongodb-versus-postgresql-databases !
 https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4 !
 
+https://snyk.io/blog/10-best-practices-to-containerize-nodejs-web-applications-with-docker/ !
+https://medium.com/@rdsubhas/docker-for-development-common-problems-and-solutions-95b25cae41eb !
+
 backup + docker ?
 
 HTTP/3 & QUIC
@@ -29,3 +32,4 @@ https://youtu.be/Dm0CmZz-QyI
 https://medium.com/jit-team/implementing-a-sane-backend-in-node-js-using-nestjs-part-i-architecture-338e1e7e8f1a
 https://medium.com/jit-team/implementing-a-sane-backend-in-node-js-using-nestjs-part-ii-project-setup-and-structure-2f4f37aa9436
 https://youtu.be/jYFyLLqvHy8
+https://wanago.io/2020/05/11/nestjs-api-controllers-routing-module/

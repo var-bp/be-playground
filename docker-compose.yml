@@ -3,7 +3,7 @@ version: "3.9"
 services:
   db:
     container_name: pg_container
-    image: postgres:13.3-alpine
+    image: postgres:13.3-alpine3.14
     restart: always
     environment:
       POSTGRES_USER: ${DB_USER}
@@ -16,7 +16,7 @@ services:
 
   pgadmin:
     container_name: pgadmin4_container
-    image: dpage/pgadmin4
+    image: dpage/pgadmin4:5.5
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
@@ -28,10 +28,13 @@ services:
     volumes:
       - ./volumes_data/pgadmin:/var/lib/pgadmin
 
-  server:
-    container_name: server_container
-    build: .
-    command: npm run start:dev
+  server_dev:
+    container_name: server_dev_container
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: ["dumb-init", "npm", "run", "start:dev"]
+    # command: npm run start:dev
     restart: always
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
@@ -43,3 +46,22 @@ services:
       DB_DATABASE: ${DB_DATABASE}
     depends_on:
       - db
+    # https://stackoverflow.com/a/37898591
+    volumes:
+      - /usr/src/app/node_modules
+      - .:/usr/src/app
+
+  # https://stackoverflow.com/a/65922688
+  server_test:
+    container_name: server_test_container
+    profiles: ["server_test"]
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: ["dumb-init", "npm", "run", "test:watch"]
+    restart: always
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    volumes:
+      - /usr/src/app/node_modules
+      - .:/usr/src/app
