@@ -13,6 +13,8 @@ export default class TypeOrmConfig {
       username: configService.get('DB_USER'),
       password: configService.get('DB_PASSWORD'),
       database: configService.get('DB_DATABASE'),
+      autoLoadEntities: true,
+      synchronize: true,
     };
   }
 }

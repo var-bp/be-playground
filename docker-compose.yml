@@ -28,40 +28,40 @@ services:
     volumes:
       - ./volumes_data/pgadmin:/var/lib/pgadmin
 
-  server_dev:
-    container_name: server_dev_container
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    command: ["dumb-init", "npm", "run", "start:dev"]
-    # command: npm run start:dev
-    restart: always
-    ports:
-      - ${SERVER_PORT}:${SERVER_PORT}
-    environment:
-      DB_HOST: ${DB_HOST}
-      DB_PORT: ${DB_PORT}
-      DB_USER: ${DB_USER}
-      DB_PASSWORD: ${DB_PASSWORD}
-      DB_DATABASE: ${DB_DATABASE}
-    depends_on:
-      - db
-    # https://stackoverflow.com/a/37898591
-    volumes:
-      - /usr/src/app/node_modules
-      - .:/usr/src/app
+  # server_dev:
+  #   container_name: server_dev_container
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.dev
+  #   command: ["dumb-init", "npm", "run", "start:dev"]
+  #   # command: npm run start:dev
+  #   restart: always
+  #   ports:
+  #     - ${SERVER_PORT}:${SERVER_PORT}
+  #   environment:
+  #     DB_HOST: ${DB_HOST}
+  #     DB_PORT: ${DB_PORT}
+  #     DB_USER: ${DB_USER}
+  #     DB_PASSWORD: ${DB_PASSWORD}
+  #     DB_DATABASE: ${DB_DATABASE}
+  #   depends_on:
+  #     - db
+  #   # https://stackoverflow.com/a/37898591
+  #   volumes:
+  #     - /usr/src/app/node_modules
+  #     - .:/usr/src/app
 
-  # https://stackoverflow.com/a/65922688
-  server_test:
-    container_name: server_test_container
-    profiles: ["server_test"]
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    command: ["dumb-init", "npm", "run", "test:watch"]
-    restart: always
-    ports:
-      - ${SERVER_PORT}:${SERVER_PORT}
-    volumes:
-      - /usr/src/app/node_modules
-      - .:/usr/src/app
+  # # https://stackoverflow.com/a/65922688
+  # server_test:
+  #   container_name: server_test_container
+  #   profiles: ["server_test"]
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.dev
+  #   command: ["dumb-init", "npm", "run", "test:watch"]
+  #   restart: always
+  #   ports:
+  #     - ${SERVER_PORT}:${SERVER_PORT}
+  #   volumes:
+  #     - /usr/src/app/node_modules
+  #     - .:/usr/src/app
