@@ -26,6 +26,7 @@ https://www.youtube.com/playlist?list=PLQnljOFTspQUybacGRk1b_p13dgI-SmcZ
 
 
 For project:
+orm (bad?) vs obm https://habr.com/ru/post/522992/ & https://blog.logrocket.com/why-you-should-avoid-orms-with-examples-in-node-js-e0baab73fa5/
 https://youtu.be/_oqSGs3rrf8
 https://stackoverflow.com/a/61916409
 https://youtu.be/Dm0CmZz-QyI
